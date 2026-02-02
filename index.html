@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "tb-blue": "#00009c",
+              "tb-green": "#00e1ff",
+              "tb-cyan": "#00e1ff",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Portofolio - Alfin Rozzaq Nirwana</title>
+  </head>
+  <body class="mx-auto max-w-screen-2xl">
+    <header
+      class="fixed z-10 left-0 right-0 bg-white py-4 text-slate-600 shadow-lg"
+    >
+      <nav class="mx-auto flex w-[94%] items-center justify-between">
+        <div>
+          <a
+            href="https://algaray.biz.id/"
+            class="hover:text-tb-blue duration-300"
+          >
+            <p class="text-center text-xl font-bold">Algaray 02</p>
+          </a>
+        </div>
+        <div
+          class="nav-links absolute left-0 top-[-800px] flex min-h-[45vh] w-full items-center bg-white px-5 duration-500 md:static md:min-h-fit md:w-auto"
+        >
+          <ul
+            class="flex flex-col gap-8 md:flex-row md:items-center md:gap-[4vw]"
+          >
+            <li>
+              <a class="hover:text-tb-blue duration-300" href="#about"
+                >Tentang</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-tb-blue duration-300" href="#skills"
+                >Skill</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-tb-blue duration-300" href="#experience"
+                >Pendidikan</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-tb-blue duration-300" href="#projects"
+                >Project</a
+              >
+            </li>
+          </ul>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          onclick="onToggleMenu(this)"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          class="z-10 size-8 cursor-pointer md:hidden"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 
+        6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+          />
+        </svg>
+      </nav>
+    </header>
+    <main class="grid gap-y-32">
+      <section id="about">
+        <div
+          class="fade-in-up relative mb-36 mx-auto grid grid-cols-1 px-8 pt-28 sm:px-10 md:grid-cols-2 lg:items-center lg:px-12"
+        >
+          <div class="">
+            <h1 class="text-3xl font-medium sm:text-5xl">
+              Aku
+              <strong class="text-tb-blue block font-extrabold"
+                >Alfin Rozzaq N.
+              </strong>
+            </h1>
+            <p class="mt-4 max-w-lg text-lg text-justify">
+              Saat ini saya menempuh mendidikan di Polines dengan Jurusan
+              Elektro dan Prodi D4-Teknologi Rekayasa Komputer. Saya keterima di
+              Polines tahun 2024 dan saya keterima lewat jalur SNBP 2024.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a
+                href="https://id.linkedin.com/in/alfin-rozzaq-nirwana-00176a329"
+                class="hover:text-tb-cyan block w-full rounded-lg bg-gray-800 px-12 py-3 text-center text-sm font-medium text-white shadow sm:w-auto duration-300"
+              >
+                Pelajari Selengkapnya
+              </a>
+            </div>
+          </div>
+          <img
+            src="images/Alpin.jpg"
+            alt=""
+            class="mx-auto hidden h-[28rem] rounded lg shadow-lg md:block"
+          />
+        </div>
+      </section>
+      <section
+        id="skills"
+        class="fade-in-up rounded grid items-center bg-pattern p-6"
+      >
+        <h1 class="text-tb-cyan mt-2 mb-20 text-4xl font-bold text-center">
+          Bahasa Yang Dipelajari
+        </h1>
+        <div
+          class="grid grid-cols-1 gap-4 px-4 sm:px-6 lg:grid-cols-4 lg:gap-8 lg:px-8"
+        >
+          <a
+            href="https://id.wikipedia.org/wiki/Python_(bahasa_pemrograman)"
+            target="_blank"
+            class="block"
+          >
+            <div
+              class="hover:bg-tb-cyan duration-300 h-32 rounded-lg bg-gray-50"
+            >
+              <div class="flex size-full items-center justify-center gap-6">
+                <img
+                  src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000"
+                  class="w-[50px] object-cover"
+                />
+                <div>
+                  <p class="font-semibold">Python</p>
+                  <p class="text-tb-blue">Back end</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://id.wikipedia.org/wiki/C_(bahasa_pemrograman)"
+            target="_blank"
+            class="block"
+          >
+            <div
+              class="hover:bg-tb-cyan duration-300 h-32 rounded-lg bg-gray-50"
+            >
+              <div class="flex size-full items-center justify-center gap-6">
+                <img
+                  src="https://img.icons8.com/?size=100&id=40670&format=png&color=000000"
+                  class="w-[50px] object-cover"
+                />
+                <div>
+                  <p class="font-semibold">C</p>
+                  <p class="text-tb-blue">Back end</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://id.wikipedia.org/wiki/C%2B%2B"
+            target="_blank"
+            class="block"
+          >
+            <div
+              class="hover:bg-tb-cyan duration-300 h-32 rounded-lg bg-gray-50"
+            >
+              <div class="flex size-full items-center justify-center gap-6">
+                <img
+                  src="https://img.icons8.com/?size=100&id=40669&format=png&color=000000"
+                  class="w-[50px] object-cover"
+                />
+                <div>
+                  <p class="font-semibold">C++</p>
+                  <p class="text-tb-blue">Back end</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://id.wikipedia.org/wiki/Pascal_(bahasa_pemrograman)"
+            target="_blank"
+            class="block"
+          >
+            <div
+              class="hover:bg-tb-cyan duration-300 h-32 rounded-lg bg-gray-50"
+            >
+              <div class="flex size-full items-center justify-center gap-6">
+                <img
+                  src="https://img.icons8.com/?size=100&id=JIca3PdDDoXN&format=png&color=000000"
+                  class="w-[50px] object-cover"
+                />
+                <div>
+                  <p class="font-semibold">Pascal</p>
+                  <p class="text-tb-blue">Back end</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section id="experience">
+        <div
+          class="mb-10 grid grid-cols-1 gap-4 px-4 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:px 8"
+        >
+          <div
+            class="fade-in-up bg-pattern flex h-auto flex-col justify-center rounded-lg p 8"
+          >
+            <h1 class="text-tb-cyan text-center mb-4 text-4xl font-bold">
+              Pendidikan
+            </h1>
+            <p class="text-base text-center text-white mx-auto max-w-lg">
+              Perjalanan pendidikan yang telah saya lalui merupakan rangkaian
+              pengalaman berharga yang telah membentuk diri saya menjadi seperti
+              sekarang. Di setiap langkah pembelajaran, saya menemukan bukan
+              hanya ilmu pengetahuan, tetapi juga pelajaran hidup yang tak
+              ternilai. Terima kasih kepada semua guru, dosen, dan teman-teman
+              yang telah mewarnai perjalanan ini dengan berbagai macam
+              pengalaman, tantangan, dan keberhasilan. Setiap kesulitan yang
+              dihadapi telah mengajarkan ketangguhan, setiap keberhasilan telah
+              menumbuhkan rasa syukur, dan setiap interaksi telah memperkaya
+              pemahaman tentang kehidupan. Semoga ilmu yang telah diperoleh
+              dapat bermanfaat bagi diri sendiri dan masyarakat luas, serta
+              menjadi bekal untuk terus berkembang di masa depan.
+            </p>
+          </div>
+          <div
+            class="flex h-auto flex-col justify-center gap-8 rounded-lg bg-gray 100 p-8"
+          >
+            <div
+              class="fade-in-up mb-3 flex flex-col items-center md:flex-row md:gap-8"
+            >
+              <img
+                src="https://th.bing.com/th/id/OIP.hA1Q5C78SZPGwKpV7VW1NQHaE9?rs=1&pid=ImgDetMain"
+                alt=""
+                class="h-36 rounded-lg"
+              />
+              <div>
+                <h3 class="mt-2 text-center text-lg font-bold md:text-left">
+                  SMP Negeri 1 Semarang
+                </h3>
+                <p class="text-justify">
+                  Tiga tahun berproses di SMP Negeri 1 Semarang telah memberikan
+                  fondasi pendidikan yang kokoh bagi saya. Di sekolah ini, saya
+                  tidak hanya mendapatkan ilmu akademis yang berkualitas, tetapi
+                  juga pembelajaran tentang kedisiplinan dan pembentukan
+                  karakter yang sangat berharga.
+                </p>
+              </div>
+            </div>
+            <div
+              class="fade-in-up mb-3 flex flex-col items-center md:flex-row md:gap-8"
+            >
+              <img
+                src="https://2.bp.blogspot.com/-0fLNj4G10FE/V7US9LOIT7I/AAAAAAAASqk/ZJOmebifMe4Bb5qwibmxMTSDhtwHlh6GwCLcB/s1600/IMG_0014.JPG"
+                alt=""
+                class="h-36 rounded-lg"
+              />
+              <div>
+                <h3 class="mt-2 text-center text-lg font-bold md:text-left">
+                  SMA Negeri 8 Semarang
+                </h3>
+                <p class="text-justify">
+                  Melanjutkan pendidikan di SMA Negeri 8 Semarang selama tiga
+                  tahun membuka wawasan saya tentang berbagai hal baru dan
+                  membentuk cara berpikir yang lebih matang. Di sekolah ini,
+                  saya belajar untuk menghadapi tantangan dengan lebih bijak
+                  sambil menjalin persahabatan yang tak terlupakan.
+                </p>
+              </div>
+            </div>
+            <div
+              class="fade-in-up mb-3 flex flex-col items-center md:flex-row md:gap-8"
+            >
+              <img
+                src="https://blog-static.mamikos.com/wp-content/uploads/2020/05/polnes.jpg"
+                alt=""
+                class="h-36 rounded-lg"
+              />
+              <div>
+                <h3 class="mt-2 text-center text-lg font-bold md:text-left">
+                  Politeknik Negeri semarang
+                </h3>
+                <p class="text-justify">
+                  Memasuki dunia perkuliahan di Politeknik Negeri Semarang
+                  membuka lembaran baru dalam perjalanan pendidikan saya. Meski
+                  baru menjalani satu semester, saya sudah merasakan perbedaan
+                  signifikan dalam sistem pembelajaran dan lingkungan akademik
+                  yang lebih profesional.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="mb-10 px-8 sm:px-10 lg:px-12">
+          <h1 class="fade-in-up text-tb-blue mb-4 text-4xl font-bold">
+            Project Saya
+          </h1>
+          <p class="fade-in-up max-w-2xl text-base">
+            Project kecil-kecilan yang sudah pernah saya buat selama belajar di
+            Semester 1, tugas-tugas mata kuliah, dan juga mengikuti Training
+            Basic PCC 2024. Semoga untuk kedepannya saya bisa membuat suatu
+            Project yang lebih besar dan bisa bermanfaat.
+          </p>
+          <div
+            class="mt-10 grid grid-cols-1 gap-4 px-4 lg:grid-cols-2 lg:gap-8"
+          >
+            <a
+              href="https://github.com/Algaray02/Kalkulator-Bilangan"
+              class="fade-in-up block group relative"
+            >
+              <img
+                alt=""
+                src="images/prj1.png"
+                class="h-auto w-full rounded-bl-3xl rounded-tr-3xl object-cover shadow-xl sm:h-64 lg:h-72"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-3xl rounded-tr-3xl"
+              >
+                <div class="text-center text-white">
+                  <p class="text-lg font-bold">Kalkulator Bilangan</p>
+                  <p class="text-sm text-center mx-auto max-w-lg">
+                    kalkulator yang bisa digunakan untuk mengubah angka biasa
+                    (desimal) ke bilangan lainnya seperti Biner, Oktal, dan
+                    heksadesimal.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="mt-4 sm:flex sm:items-center sm:justify-center sm:gap-4"
+              >
+                <strong class="font-medium">Kalkulator Bilangan</strong>
+                <span
+                  class="hidden sm:block sm:h-px sm:w-8 sm:bg-blue-500"
+                ></span>
+                <p class="mt-0.5 opacity-50 sm:mt-0">Simple Python Code</p>
+              </div>
+            </a>
+            <a
+              href="https://github.com/Algaray02/Plane-With-Python"
+              class="fade-in-up block group relative"
+            >
+              <img
+                alt=""
+                src="images/prj2.png"
+                class="h-auto w-full rounded-bl-3xl rounded-tr-3xl object-cover shadow-xl sm:h-64 lg:h-72"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-3xl rounded-tr-3xl"
+              >
+                <div class="text-center text-white">
+                  <p class="text-lg font-bold">Mini Plane Game</p>
+                  <p class="text-sm text-center mx-auto max-w-lg">
+                    Game pesawat mini yang saya buat menggunakan Python,
+                    mekanisme dari pesawat ini adalah memburu objek merah dan
+                    dilarang menembak objek biru serta jangan sampai menabrak
+                    objek merah.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="mt-4 sm:flex sm:items-center sm:justify-center sm:gap-4"
+              >
+                <strong class="font-medium">Mini Plane Game</strong>
+                <span
+                  class="hidden sm:block sm:h-px sm:w-8 sm:bg-blue-500"
+                ></span>
+                <p class="mt-0.5 opacity-50 sm:mt-0">Simple Python Game</p>
+              </div>
+            </a>
+            <a
+              href="https://github.com/Algaray02/Bounce-Ball-Pscl"
+              class="fade-in-up block group relative"
+            >
+              <img
+                alt=""
+                src="images/prj3.png"
+                class="h-auto w-full rounded-bl-3xl rounded-tr-3xl object-cover shadow-xl sm:h-64 lg:h-72"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-3xl rounded-tr-3xl"
+              >
+                <div class="text-center text-white">
+                  <p class="text-lg font-bold">Bounce Ball Game</p>
+                  <p class="text-sm text-center mx-auto max-w-lg">
+                    Game yang saya buat dengan membuat mini game seperti game
+                    jadul bernama Bounce Ball. Game ini saya buat untuk Tugas
+                    Akhir dari mata kuliah Algoritma dan Pemrograman yang
+                    mengharuskan ngoding dengan menggunakan bahasa pascal.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="mt-4 sm:flex sm:items-center sm:justify-center sm:gap-4"
+              >
+                <strong class="font-medium">Bounce Ball Game</strong>
+                <span
+                  class="hidden sm:block sm:h-px sm:w-8 sm:bg-blue-500"
+                ></span>
+                <p class="mt-0.5 opacity-50 sm:mt-0">Simple Pascal Code</p>
+              </div>
+            </a>
+            <a
+              href="https://algaray02.github.io/portofolio-alfin/"
+              class="fade-in-up block group relative"
+            >
+              <img
+                alt=""
+                src="images/prj4.png"
+                class="h-auto w-full rounded-bl-3xl rounded-tr-3xl object-cover shadow-xl sm:h-64 lg:h-72"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-3xl rounded-tr-3xl"
+              >
+                <div class="text-center text-white">
+                  <p class="text-lg font-bold">Portofolio</p>
+                  <p class="text-sm text-center mx-auto max-w-lg">
+                    Website Portofolio pertama yang saya buat, didapatkan dari
+                    mengikuti Training Basic PCC 2024 yang menggunakan kombinasi
+                    antara HTML dan CSS serta menggunakan framework Tailwind
+                    untuk memudahkan membuat website.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="mt-4 sm:flex sm:items-center sm:justify-center sm:gap-4"
+              >
+                <strong class="font-medium">Portofolio</strong>
+                <span
+                  class="hidden sm:block sm:h-px sm:w-8 sm:bg-blue-500"
+                ></span>
+                <p class="mt-0.5 opacity-50 sm:mt-0">Web Design</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="fade-in-up bg-footer rounded">
+      <div class="mx-auto max-w-5xl px-4 py-16 text-white sm:px-6 lg:px-8">
+        <a
+          class="hover:text-tb-cyan duration-300"
+          href="https://www.ukmpcc.org/"
+        >
+          <p class="text-center text-xl font-bold">Software Supermacy</p>
+        </a>
+        <p class="mx-auto mt-2 max-w-md text-center leading-relaxed mb-10">
+          Departemen Software adalah Departemen yang bertanggungjawab
+          mengembangkan hardskill, memberikan pelatihan, dan menghasilkan produk
+          / portofolio di bidang Software
+        </p>
+        <p class="text-center text-xl font-bold">Sosial Media Saya</p>
+        <ul class="mt-6 flex justify-center gap-6 md:gap-8">
+          <li>
+            <a
+              href="https://wa.me/6285728141488/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-white transition hover:text-teal-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/algaray_02/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-white transition hover:text-orange-600"
+            >
+              <svg
+                class="size-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Algaray02"
+              rel="noreferrer"
+              target="_blank"
+              class="text-white transition hover:text-purple-800"
+            >
+              <svg
+                class="size-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
