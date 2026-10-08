@@ -14,14 +14,14 @@ jobs:
 
       - name: SSH to RupaCloud Container & Deploy
         uses: appleboy/ssh-action@v1.0.0
+        env:
+          APP_ENV_CONTENT: ${{ secrets.APP_ENV }}
         with:
           host: ${{ secrets.SERVER_IP }}
           port: ${{ secrets.SERVER_PORT || 22 }}
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           envs: APP_ENV_CONTENT
-          env:
-            APP_ENV_CONTENT: ${{ secrets.APP_ENV }}
           script: |
             # 1. Pastikan folder ~/app tersedia dan clone/pull dari branch main
             if [ ! -d ~/app/.git ]; then
@@ -65,4 +65,3 @@ jobs:
             # 6. Menjalankan / merestart aplikasi
             which serve >/dev/null 2>&1 || npm install -g serve -s 2>/dev/null; pm2 restart app 2>/dev/null || pm2 start serve --name app -- -s dist -l 3000
             pm2 save 2>/dev/null || true
-
