@@ -63,7 +63,7 @@ const HeroSection = () => {
           >
             <span className="font-mono text-primary">Informatics Student</span>
             <span className="hidden sm:inline text-border">|</span>
-            <span>Web Developer</span>
+            <span>Web App Developer</span>
             <span className="hidden sm:inline text-border">|</span>
             <span>Tech Enthusiast</span>
           </motion.div>
