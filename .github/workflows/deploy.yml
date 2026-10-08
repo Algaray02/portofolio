@@ -24,12 +24,14 @@ jobs:
           envs: APP_ENV_CONTENT
           script: |
             # 1. Pastikan folder ~/app tersedia dan clone/pull dari branch main
+            set -e
             if [ ! -d ~/app/.git ]; then
               rm -rf ~/app
-              git clone -b main $GITHUB_SERVER_URL/$GITHUB_REPOSITORY ~/app
+              git clone -b main https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git ~/app
               cd ~/app
             else
               cd ~/app
+              git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
               git fetch --all
               git reset --hard origin/main
             fi
