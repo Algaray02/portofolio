@@ -18,8 +18,8 @@ jobs:
           chmod 700 ~/.ssh
           if echo "${{ secrets.SERVER_IP }}" | grep -qE '.[a-zA-Z]{2,}$'; then
             echo "Mengunduh client Cloudflare Tunnel untuk koneksi SSH..."
-            curl -fsSL https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -o /usr/local/bin/cloudflared
-            chmod +x /usr/local/bin/cloudflared
+            sudo curl -fsSL https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -o /usr/local/bin/cloudflared
+            sudo chmod +x /usr/local/bin/cloudflared
             cat << 'EOF' >> ~/.ssh/config
           Host *
             ProxyCommand /usr/local/bin/cloudflared access ssh --hostname %h
@@ -115,7 +115,7 @@ jobs:
             systemctl enable pm2-root 2>/dev/null || true
 
             echo "✔ Aplikasi berhasil diperbarui dan aktif berjalan di port 3000."
-REMOTE_SCRIPT_EOF
+          REMOTE_SCRIPT_EOF
           rm -f ~/.ssh/deploy_key
 
       - name: 📊 Ringkasan Status Deployment (RuPa Cloud Summary)
