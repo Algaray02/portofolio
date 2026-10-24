@@ -33,7 +33,7 @@ jobs:
           RESPONSE=$(curl -s -X POST "$DEPLOY_URL" \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer $DEPLOY_TOKEN" \
-            -d "{\"repo\":\"${{ github.repository }}\",\"branch\":\"main\",\"commitSha\":\"${{ github.sha }}\",\"actor\":\"${{ github.actor }}\",\"frameworkId\":\"vite_spa\",\"port\":3000}")
+            -d "{\"repo\":\"${{ github.repository }}\",\"branch\":\"main\",\"commitSha\":\"${{ github.sha }}\",\"actor\":\"${{ github.actor }}\",\"frameworkId\":\"vite_spa\",\"port\":3000,\"rootDirectory\":\"portofolio-part2\"}")
 
           JOB_ID=$(echo "$RESPONSE" | grep -o '"jobId":"[^"]*' | cut -d'"' -f4)
           if [ -z "$JOB_ID" ]; then
